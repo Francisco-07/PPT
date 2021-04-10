@@ -1,0 +1,80 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.flex-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+.mt-10 {
+    margin-top: 25px;
+}
+
+.mt-2 {
+    margin-top: 15px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+button:active {
+     outline: none 
+    }  
+
+button:focus { 
+    outline:none
+ }
+
+ button:hover {
+     transform: scale(1.07);
+     transition: all 0.2s;
+ }
+
+ #play-again {
+     margin-top: 20px;
+     font-size: 25px;
+     padding: 5px;
+    }
+.toggle {
+    display: none;
+}
+ .red {
+     color: #ff1f1f;
+    }
+ .green {
+     color: #02cf46;
+    }
+
+ #delete {
+    margin-top: 10px;
+    width: 85px;
+    height: 85px;
+        }
+ 
+ .red-b {
+    color: #ff1f1f;
+    border: 3px solid #ff1f1f;
+        }
+.green-b {
+    color: #02cf46;
+    border: 3px solid #02cf46;
+}
