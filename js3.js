@@ -12,6 +12,8 @@ const btnTijeras = document.getElementById('tijeras');
 const output = document.getElementById('testo');
 const outputTextP = document.getElementById("human-score");
 const outputTextC = document.getElementById("computer-score");
+const humanWonRound = document.getElementById("human-won-round");
+const ComputerWonRound = document.getElementById("computer-won-round");
 const h1 = document.getElementById("h1");
 
 // crear imagenes
@@ -65,17 +67,23 @@ function playRound(computer, human) {
 
     if (human == computer) {
         output.textContent = "Empate!";
+        humanWonRound.classList.remove('green')
+        ComputerWonRound.classList.remove('red')
     }
     else if (human == "tijeras" && computer == "papel" || human == "papel" && computer == "piedra" || human == "piedra" && computer == "tijeras") {
         output.textContent = `${human} le gana a ${computer}, human wins!`
         playerScore = playerScore + 1;
         outputTextP.textContent = `Human Score: ${playerScore}`
+        humanWonRound.classList.add('green')
+        ComputerWonRound.classList.remove('red')
     }
 
     else if (computer == "tijeras" && human == "papel" || computer == "papel" && human == "piedra" || computer == "piedra" && human == "tijeras") {
         output.textContent = `${computer} le gana a ${human}, computer wins!`
         computerScore = computerScore + 1;
         outputTextC.textContent = `Computer Score: ${computerScore}`
+        ComputerWonRound.classList.add('red')
+        humanWonRound.classList.remove('green')
     }
 }
 // // first to reach 5
