@@ -126,6 +126,8 @@ function playAgain() {
     h1.classList.remove("red");
     btnPlayAgain.classList.remove("green");
     btnPlayAgain.classList.remove("red");
+    ComputerWonRound.classList.remove('red')
+    humanWonRound.classList.remove('green')
     document.getElementById("piedra").disabled = false;
     document.getElementById("tijeras").disabled = false;
     document.getElementById("papel").disabled = false;
